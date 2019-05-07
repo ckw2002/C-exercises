@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<stdio.h>
 
 int main()
@@ -26,3 +27,33 @@ int main()
         printf("%d\n", data[i]);
 
 }
+=======
+#include<stdio.h>
+
+int main()
+{
+    int i,j,tmp;
+    int data[8]={23,42,11,44,2,45,3,35};//data
+
+    printf("origin bubble sort is :");
+    for(i=0;i<8;i++)
+        printf("%d\n", data[i]);
+    for(i=8;i>0;i--)
+    {
+    for(j=0;j<i;j++)
+    {
+        if(data[j]>data[j+1])
+        {
+            tmp=data[j];
+            data[j]=data[j+1];
+            data[j+1]=tmp;
+        }
+    }
+    }
+
+    printf("done for bubble sort is :" );
+    for(i=0;i<8;i++)
+        printf("%d\n", data[i]);
+
+}
+>>>>>>> 3eb029ed831fb16429297a0b6b267e3008b34055
